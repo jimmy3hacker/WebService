@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnPNR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/hind_siliguri_medium"
+        android:text="PNR Status"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:layout_marginTop="145dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:id="@+id/btnTrain"
+        android:background="@drawable/btn"
+        android:textSize="24sp"
+        android:fontFamily="@font/hind_siliguri_medium"
+        android:textColor="#fff"
+        android:text="Train Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

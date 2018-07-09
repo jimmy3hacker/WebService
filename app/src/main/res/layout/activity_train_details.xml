@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="20dp"
+    tools:context=".TrainDetails">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/trainTIP"
+        android:layout_width="match_parent"
+        android:layout_marginTop="75dp"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/idTrainEdit"
+            android:inputType="number"
+            android:fontFamily="@font/hind_siliguri_medium"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:hint="Enter Train Number"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_below="@id/trainTIP"
+        android:id="@+id/btnDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="45dp"
+        android:elevation="18sp"
+        android:background="@drawable/btn"
+        android:text="Get Train Details"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_below="@id/btnDetail"
+        android:id="@+id/idLabelTName"
+        android:fontFamily="@font/hind_siliguri_medium"
+        android:text="Train Name:"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/btnDetail"
+        android:id="@+id/opTextTName"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/hind_siliguri_medium"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/idLabelTName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/btnDetail"
+        android:id="@+id/idLabelTRunsOn"
+        android:fontFamily="@font/hind_siliguri_medium"
+        android:text="Runs On:"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnDetail"
+        android:id="@+id/mainLinearLayout"
+        android:padding="5dp"
+        android:fontFamily="@font/hind_siliguri_medium"
+        android:layout_toRightOf="@id/idLabelTName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
